@@ -1,6 +1,7 @@
 ## 黑苹果OC配置文件
 * [硬件配置](#硬件配置)
 * [实现功能](#实现功能)
+* [BIOS配置](#主板bios配置)
 * [存在问题](#未实现)
 
 ## 硬件配置
@@ -30,6 +31,20 @@
 运行在480M
 * USB接口给苹果设备充电异常。EC运行正常，AppleBusPowerController  
 挂载正常，可通过定制USB接口解决
+
+## 主板BIOS配置
+开启选项: 
+* above 4G decoding
+* XHCI hand-off
+* IGPU multi-monitor
+  * share memory 64MB
+* Intel VT
+关闭选项:
+* fast boot
+* CSM
+* Intel platform trust
+* CFG lock
+* Intel SGX
 
 ## 注意事项
 * 已把序列号删除，需自行配置序列号防止被ban
